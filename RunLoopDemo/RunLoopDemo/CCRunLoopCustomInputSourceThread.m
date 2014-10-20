@@ -29,6 +29,8 @@
         [self.customInputSource addToCurrentRunLoop];
         
         while (!self.cancelled) {
+            NSLog(@"Enter Run Loop");
+            
             // print test string;
             [self finishOtherTask];
             

@@ -40,6 +40,7 @@
     if (kTestCustomInputSpurceRunLoopThread) {
         [self startCustomInputSpurceRunLoopThread];
     }
+    
     return YES;
 }
 
