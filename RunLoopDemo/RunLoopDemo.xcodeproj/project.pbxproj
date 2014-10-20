@@ -94,7 +94,7 @@
 				34879BC119F50B0300E961F2 /* CCTestRunLoopViewController.m */,
 				34879BC219F50B0300E961F2 /* CCRunLoopThread.h */,
 				34879BC319F50B0300E961F2 /* CCRunLoopThread.m */,
-				34879BB719F50AD200E961F2 /* ConfigueRunLoopSource */,
+				34879BB719F50AD200E961F2 /* ConfigureRunLoopSource */,
 				34879B9119F4D0E100E961F2 /* Images.xcassets */,
 				34879B9319F4D0E100E961F2 /* LaunchScreen.xib */,
 				34879B8419F4D0E100E961F2 /* Supporting Files */,
@@ -128,7 +128,7 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		34879BB719F50AD200E961F2 /* ConfigueRunLoopSource */ = {
+		34879BB719F50AD200E961F2 /* ConfigureRunLoopSource */ = {
 			isa = PBXGroup;
 			children = (
 				34879BB819F50ADA00E961F2 /* CCRunLoopInputSource.h */,
@@ -136,7 +136,7 @@
 				34879BBA19F50ADA00E961F2 /* CCRunLoopCustomInputSourceThread.h */,
 				34879BBB19F50ADA00E961F2 /* CCRunLoopCustomInputSourceThread.m */,
 			);
-			name = ConfigueRunLoopSource;
+			name = ConfigureRunLoopSource;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
