@@ -7,11 +7,20 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "CCRunLoopInputSource.h"
 
 @interface CCAppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
 
-
 @end
 
+@interface CCAppDelegate (RunLoop)
+
+- (void)registerSource:(CCRunLoopContext *)sourceContext;
+
+- (void)removeSource:(CCRunLoopContext *)sourceContext;
+
+- (void)testInputSourceEvent;
+
+@end

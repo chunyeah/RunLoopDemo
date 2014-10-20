@@ -8,12 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		34879B8719F4D0E100E961F2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 34879B8619F4D0E100E961F2 /* main.m */; };
-		34879B8A19F4D0E100E961F2 /* CCAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 34879B8919F4D0E100E961F2 /* CCAppDelegate.m */; };
 		34879B9219F4D0E100E961F2 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 34879B9119F4D0E100E961F2 /* Images.xcassets */; };
 		34879B9519F4D0E100E961F2 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 34879B9319F4D0E100E961F2 /* LaunchScreen.xib */; };
 		34879BA119F4D0E100E961F2 /* RunLoopDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 34879BA019F4D0E100E961F2 /* RunLoopDemoTests.m */; };
-		34879BAE19F4D10E00E961F2 /* CCTestRunLoopViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 34879BAB19F4D10E00E961F2 /* CCTestRunLoopViewController.m */; };
-		34879BAF19F4D10E00E961F2 /* CCRunLoopThread.m in Sources */ = {isa = PBXBuildFile; fileRef = 34879BAD19F4D10E00E961F2 /* CCRunLoopThread.m */; };
+		34879BBC19F50ADA00E961F2 /* CCRunLoopInputSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 34879BB919F50ADA00E961F2 /* CCRunLoopInputSource.m */; };
+		34879BBD19F50ADA00E961F2 /* CCRunLoopCustomInputSourceThread.m in Sources */ = {isa = PBXBuildFile; fileRef = 34879BBB19F50ADA00E961F2 /* CCRunLoopCustomInputSourceThread.m */; };
+		34879BC419F50B0300E961F2 /* CCAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 34879BBF19F50B0300E961F2 /* CCAppDelegate.m */; };
+		34879BC519F50B0300E961F2 /* CCTestRunLoopViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 34879BC119F50B0300E961F2 /* CCTestRunLoopViewController.m */; };
+		34879BC619F50B0300E961F2 /* CCRunLoopThread.m in Sources */ = {isa = PBXBuildFile; fileRef = 34879BC319F50B0300E961F2 /* CCRunLoopThread.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -30,17 +32,21 @@
 		34879B8119F4D0E100E961F2 /* RunLoopDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RunLoopDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		34879B8519F4D0E100E961F2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		34879B8619F4D0E100E961F2 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		34879B8819F4D0E100E961F2 /* CCAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CCAppDelegate.h; sourceTree = "<group>"; };
-		34879B8919F4D0E100E961F2 /* CCAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CCAppDelegate.m; sourceTree = "<group>"; };
 		34879B9119F4D0E100E961F2 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		34879B9419F4D0E100E961F2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		34879B9A19F4D0E100E961F2 /* RunLoopDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RunLoopDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		34879B9F19F4D0E100E961F2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		34879BA019F4D0E100E961F2 /* RunLoopDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RunLoopDemoTests.m; sourceTree = "<group>"; };
-		34879BAA19F4D10E00E961F2 /* CCTestRunLoopViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCTestRunLoopViewController.h; sourceTree = "<group>"; };
-		34879BAB19F4D10E00E961F2 /* CCTestRunLoopViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCTestRunLoopViewController.m; sourceTree = "<group>"; };
-		34879BAC19F4D10E00E961F2 /* CCRunLoopThread.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCRunLoopThread.h; sourceTree = "<group>"; };
-		34879BAD19F4D10E00E961F2 /* CCRunLoopThread.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCRunLoopThread.m; sourceTree = "<group>"; };
+		34879BB819F50ADA00E961F2 /* CCRunLoopInputSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCRunLoopInputSource.h; sourceTree = "<group>"; };
+		34879BB919F50ADA00E961F2 /* CCRunLoopInputSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCRunLoopInputSource.m; sourceTree = "<group>"; };
+		34879BBA19F50ADA00E961F2 /* CCRunLoopCustomInputSourceThread.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCRunLoopCustomInputSourceThread.h; sourceTree = "<group>"; };
+		34879BBB19F50ADA00E961F2 /* CCRunLoopCustomInputSourceThread.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCRunLoopCustomInputSourceThread.m; sourceTree = "<group>"; };
+		34879BBE19F50B0300E961F2 /* CCAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCAppDelegate.h; sourceTree = "<group>"; };
+		34879BBF19F50B0300E961F2 /* CCAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCAppDelegate.m; sourceTree = "<group>"; };
+		34879BC019F50B0300E961F2 /* CCTestRunLoopViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCTestRunLoopViewController.h; sourceTree = "<group>"; };
+		34879BC119F50B0300E961F2 /* CCTestRunLoopViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCTestRunLoopViewController.m; sourceTree = "<group>"; };
+		34879BC219F50B0300E961F2 /* CCRunLoopThread.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCRunLoopThread.h; sourceTree = "<group>"; };
+		34879BC319F50B0300E961F2 /* CCRunLoopThread.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCRunLoopThread.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,12 +88,13 @@
 		34879B8319F4D0E100E961F2 /* RunLoopDemo */ = {
 			isa = PBXGroup;
 			children = (
-				34879B8819F4D0E100E961F2 /* CCAppDelegate.h */,
-				34879B8919F4D0E100E961F2 /* CCAppDelegate.m */,
-				34879BAA19F4D10E00E961F2 /* CCTestRunLoopViewController.h */,
-				34879BAB19F4D10E00E961F2 /* CCTestRunLoopViewController.m */,
-				34879BAC19F4D10E00E961F2 /* CCRunLoopThread.h */,
-				34879BAD19F4D10E00E961F2 /* CCRunLoopThread.m */,
+				34879BBE19F50B0300E961F2 /* CCAppDelegate.h */,
+				34879BBF19F50B0300E961F2 /* CCAppDelegate.m */,
+				34879BC019F50B0300E961F2 /* CCTestRunLoopViewController.h */,
+				34879BC119F50B0300E961F2 /* CCTestRunLoopViewController.m */,
+				34879BC219F50B0300E961F2 /* CCRunLoopThread.h */,
+				34879BC319F50B0300E961F2 /* CCRunLoopThread.m */,
+				34879BB719F50AD200E961F2 /* ConfigueRunLoopSource */,
 				34879B9119F4D0E100E961F2 /* Images.xcassets */,
 				34879B9319F4D0E100E961F2 /* LaunchScreen.xib */,
 				34879B8419F4D0E100E961F2 /* Supporting Files */,
@@ -119,6 +126,17 @@
 				34879B9F19F4D0E100E961F2 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		34879BB719F50AD200E961F2 /* ConfigueRunLoopSource */ = {
+			isa = PBXGroup;
+			children = (
+				34879BB819F50ADA00E961F2 /* CCRunLoopInputSource.h */,
+				34879BB919F50ADA00E961F2 /* CCRunLoopInputSource.m */,
+				34879BBA19F50ADA00E961F2 /* CCRunLoopCustomInputSourceThread.h */,
+				34879BBB19F50ADA00E961F2 /* CCRunLoopCustomInputSourceThread.m */,
+			);
+			name = ConfigueRunLoopSource;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -220,10 +238,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				34879BAE19F4D10E00E961F2 /* CCTestRunLoopViewController.m in Sources */,
-				34879BAF19F4D10E00E961F2 /* CCRunLoopThread.m in Sources */,
-				34879B8A19F4D0E100E961F2 /* CCAppDelegate.m in Sources */,
+				34879BC419F50B0300E961F2 /* CCAppDelegate.m in Sources */,
+				34879BC519F50B0300E961F2 /* CCTestRunLoopViewController.m in Sources */,
+				34879BBC19F50ADA00E961F2 /* CCRunLoopInputSource.m in Sources */,
+				34879BBD19F50ADA00E961F2 /* CCRunLoopCustomInputSourceThread.m in Sources */,
 				34879B8719F4D0E100E961F2 /* main.m in Sources */,
+				34879BC619F50B0300E961F2 /* CCRunLoopThread.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -408,6 +428,7 @@
 				34879BA619F4D0E100E961F2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		34879BA719F4D0E100E961F2 /* Build configuration list for PBXNativeTarget "RunLoopDemoTests" */ = {
 			isa = XCConfigurationList;
@@ -416,6 +437,7 @@
 				34879BA919F4D0E100E961F2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

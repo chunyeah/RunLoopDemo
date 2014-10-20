@@ -7,6 +7,7 @@
 //
 
 #import "CCTestRunLoopViewController.h"
+#import "CCAppDelegate.h"
 
 @interface CCTestRunLoopViewController ()
 
@@ -40,6 +41,14 @@
     [normalButton setTitle:@"Normal" forState:UIControlStateNormal];
     [normalButton addTarget:self action:@selector(handleNormalButtonTouchUpInside) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:normalButton];
+    
+    /* Test Run Loop Custom Source Thread Button */
+    {
+        UIButton *testCustomSourceButton = [[UIButton alloc] initWithFrame:CGRectMake(10, 300, 300, 50)];
+        [testCustomSourceButton setTitle:@"Test Custom Source" forState:UIControlStateNormal];
+        [testCustomSourceButton addTarget:self action:@selector(handleTestCustomSourceButtonTouchUpInside) forControlEvents:UIControlEventTouchUpInside];
+        [self.view addSubview:testCustomSourceButton];
+    }
  }
 
 - (void)didReceiveMemoryWarning
@@ -100,6 +109,12 @@
     NSLog(@"Exit handleNormalButtonTouchUpInside");
 }
 
+- (void)handleTestCustomSourceButtonTouchUpInside
+{
+    CCAppDelegate *appDelegate = [UIApplication sharedApplication].delegate;
+    [appDelegate testInputSourceEvent];
+}
+
 #pragma mark - Private
 
 - (void)handleNormalThreadTask
@@ -111,7 +126,7 @@
         sleep(1);
     }
     
-    self.normalThreadDidFinishFlag = YES;
+    _normalThreadDidFinishFlag = YES;
     
     NSLog(@"Exit Normal Thread");
 }
@@ -127,7 +142,7 @@
     
 #if 0
     // 错误示范
-    self.runLoopThreadDidFinishFlag = YES;
+    _runLoopThreadDidFinishFlag = YES;
     // 这个时候并不能执行线程完成之后的任务，因为Run Loop所在的线程并不知道runLoopThreadDidFinishFlag被重新赋值。Run Loop这个时候没有被任务事件源唤醒。
     // 你会发现这个时候点击屏幕中的UI，线程将会继续执行。 因为Run Loop被UI事件唤醒。
     // 正确的做法是使用 "selector"方法唤醒Run Loop。 即如下:
@@ -140,7 +155,7 @@
 
 - (void)updateRunLoopThreadDidFinishFlag
 {
-    self.runLoopThreadDidFinishFlag = YES;
+    _runLoopThreadDidFinishFlag = YES;
 }
 
 @end
